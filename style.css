@@ -6,7 +6,7 @@
 aside{
     width: 270px;
     height: 100vh;
-    background: rgb(89,64,41);
+    background: rgb(46, 34, 24);
     position: fixed;
 }
 .sidebar-header{
@@ -14,71 +14,86 @@ aside{
     align-items: center;
     justify-content: center;
     height: 100px;
-    background: linear-gradient(90deg,rgba(217, 119, 6, 1) 0%, rgba(199, 146, 78, 1) 40%, rgba(126, 97, 74, 1) 100%);
-    border-bottom: 3px solid white;
+    background: (31, 22, 16, 0.4);
+    border-right: 2px solid rgba(255, 184, 0, 0.15);
+    border-bottom: 3px solid rgba(255, 184, 0, 0.15);
 }
 .logo-icon{
-    width: 60px;
-    height: 50px;
-    background: linear-gradient(90deg,rgba(217, 119, 6, 1) 0%, rgb(114, 128, 120) 0%, rgba(237, 221, 83, 1) 100%);
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, rgb(255, 184, 0), rgb(217, 119, 6));
     border-radius: 15px;
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 30px;
-    color: rgb(77, 75, 74);
-    box-shadow: 0 4px 10px rgb(31, 22, 16);
+    font-size: 22px;
+    color: rgb(46, 34, 24);
+    box-shadow: 0 4px 10px rgba(255, 184, 0, 0.3);
     margin-left: 15px;
 }
 .logo-text{
-    color: rgb(85, 43, 22);
-    font-size: 20px;
+    color: rgb(250, 248, 245);
+    font-size: 17px;
     font-weight: 600;
-    margin-left:10px; 
+    margin-left:10px;
+    line-height: 1.2; 
 }
-nav{
-    margin-top: 20px;
+.logo-text span{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(139, 157, 170);
+}
+.nav-menu{
+    flex: 1;
+    padding: 20px 12px;
+    overflow-y: auto;
 }
 .nav-section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
 }
-.nav-section a{
+.nav-item, .nav-item-active{
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 5px 15px;
-    color: rgb(57, 53, 52);
+    gap: 14px;
+    padding: 12px 16px;
+    color: rgba(250, 248, 245, 0.75);
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    background: linear-gradient(90deg,rgba(217, 119, 6, 1) 0%, rgb(114, 128, 120) 0%, rgba(237, 221, 83, 1) 100%);
-    margin: 5px 0 5px 10px;
-    height: 40px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    transition: all 0.25s ease;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
 }
-.nav-section-active a:hover{ 
-    cursor: pointer;
-    transform: translateY(-4px);
+.nav-item i, .nav-item-active i{
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
 }
-.nav-section i{
-    font-size: 25px;
-    font-weight: 600px;
-    color:rgb(33, 21, 7);
+.nav-item:hover{
+    color: rgb(250, 248, 245);
+    background: rgba(255, 184, 0, 0.1);
+    transform: translateX(4px);
+    border-radius: 5px;
 }
-.nav-section span{
-    font-size: 15px;
+.nav-item-active {
+    background: linear-gradient(135deg, rgb(255, 184, 0), rgb(217, 119, 6));
+    color: rgb(46, 34, 24);
     font-weight: 600;
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    border-radius: 5px;
+}
+.nav-item-active i {
+    color: rgb(46, 34, 24);
 }
 .sidebar-footer{
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-top: solid 3px white;
-    margin: 50px 0 10px 0;
-    padding: 10px 15px;
-    background: linear-gradient(90deg,rgba(217, 119, 6, 1) 0%, rgba(199, 146, 78, 1) 40%, rgba(126, 97, 74, 1) 100%);
+    border-top: 2px solid rgba(255, 184, 0, 0.15);
+    padding: 18px 20px;
+    margin-top: 170px;
+    background: rgba(31, 22, 16, 0.5);
 }
 .user-logo{
     width: 50px;
@@ -86,16 +101,66 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg,rgba(217, 119, 6, 1) 0%, rgb(114, 128, 120) 0%, rgba(237, 221, 83, 1) 100%);
-    border-radius: 15px;
-    color: rgb(77, 75, 74);
-    box-shadow: 0 4px 10px rgb(31, 22, 16);
-    margin-right: 10px;
+    background: rgba(255, 184, 0, 0.15);
+    border: 1px solid rgb(255, 184, 0);
+    border-radius: 50%;
+    color: rgb(255, 184, 0);
+    font-size: 14px;
+}
+.user-info{
+    margin-left: 12px;
+    overflow: hidden;
 }
 .user-info p{
     font-size: 15px;
     font-weight: 600;
+    color: rgb(250, 248, 245);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .user-info span{
-    font-size: 15px;
+    font-size: 12px;
+    color: rgb(139, 157, 170);
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.main{
+    margin-left: 270px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 70px;
+    background-color: rgba(250, 248, 245, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 0 32px;
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgba(237, 217, 195, 0.4);
+    border-radius: 15px;
+    border: solid 2px rgba(237, 217, 195, 0.4);
+    color: rgba(255, 183, 0, 0.582);
+}
+.content{
+    position: relative;
+    flex: 1;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.45), rgba(31, 22, 16, 0.55)), url('sonnen.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
