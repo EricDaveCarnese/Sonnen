@@ -254,3 +254,7 @@ tr, td{
 td:nth-child(4){
   color:rgba(255, 183, 0, 0.914);
 }
+tbody tr:hover{
+  background: rgba(149, 123, 57, 0.459);
+  cursor: pointer;
+}
