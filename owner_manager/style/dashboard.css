@@ -138,7 +138,7 @@ aside {
 }
 .header {
   height: 60px;
-  background-color: rgba(250, 248, 245, 0.88);
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -184,14 +184,6 @@ aside {
   font-size: 35px;
   font-weight: 700;
   color: rgba(10, 10, 10, 0.918);
-}
-.card-icon {
-  padding: 10px;
-  background: rgba(237, 217, 195, 0.832);
-  color: rgba(255, 183, 0, 0.914);
-  border: 1px solid rgba(255, 183, 0, 0.914);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 184, 0, 0.3);
 }
 .card {
   background-color: rgba(255, 253, 253, 0.692);
