@@ -94,7 +94,7 @@ aside {
   align-items: center;
   border-top: 2px solid rgba(255, 184, 0, 0.15);
   padding: 18px 20px;
-  margin-top: 170px;
+  margin-top: 25px;
   background: rgba(31, 22, 16, 0.5);
 }
 .user-logo {
@@ -144,6 +144,9 @@ aside {
   justify-content: space-between;
   position: sticky;
   padding: 0 32px;
+  top: 0;
+  z-index: 999;
+  left: 270px;
 }
 .header-right {
   display: flex;
@@ -160,6 +163,7 @@ aside {
 .content {
   position: relative;
   flex: 1;
+  overflow-y: auto;
   background-image: linear-gradient(rgba(8, 8, 8, 0.964), rgba(31, 22, 16, 0.55)), url("/source/sonnen.jpg");
   background-size: cover;
   background-position: center;
@@ -198,24 +202,33 @@ aside {
   transform: scale(1.05);
 }
 .table-card {
-  height: 450px;
-  text-align: center;
+  height: 420px;
   background: rgba(255, 253, 253, 0.692);
   margin: 18px;
   margin-right: 28px;
   border-radius: 15px;
   padding-top: 5px;
 }
-.table-card h3 {
-  padding-top: 10px;
-  font-size: 20px;
-  border: 1px solid gray;
-  margin: 10px 15px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  padding-bottom: 5px;
-  color: rgba(3, 3, 3, 0.884);
-  background: rgba(255, 255, 255, 0.466);
+.top-table{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.top-table a{
+  padding: 5px 30px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255, 183, 0, 0.914);
+  box-shadow: 0 4px 10px rgba(30, 30, 29, 0.582);
+  transition: all 0.25s ease;
+}
+.top-table a:hover{
+  transform: scale(1.03);
+}
+.top-table a:active{
+  transform: scale(0.90);
 }
 .table-container{
   display: flex;
@@ -243,10 +256,17 @@ tr, td{
   color: rgba(255, 255, 255, 0.76);
   font-size: 15px;
 }
-td:nth-child(4){
+td:nth-child(6),
+td:nth-child(7){
   color:rgba(255, 183, 0, 0.914);
 }
 tbody tr:hover{
   background: rgba(149, 123, 57, 0.459);
   cursor: pointer;
+}
+.second-table{
+  height: 450px;
+  background: rgba(255, 253, 253, 0.692);
+  margin: 30px 0;
+  border-radius: 15px;
 }

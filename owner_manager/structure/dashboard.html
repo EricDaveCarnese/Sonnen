@@ -27,11 +27,11 @@
               <i class="fa-solid fa-chart-pie"></i>
               <span>Dashboard</span>
             </a>
-            <a class="nav-item" href="">
+            <a class="nav-item" href="/owner_manager/structure/guest_directory.html">
               <i class="fa-solid fa-user-group"></i>
               <span>Guest Directory</span>
             </a>
-            <a class="nav-item" href="">
+            <a class="nav-item" href="/owner_manager/structure/user_acounts.html">
               <i class="fa-solid fa-user-shield"></i>
               <span>User Accounts</span>
             </a>
@@ -47,7 +47,7 @@
               <i class="fa-solid fa-utensils"></i>
               <span>Food & Beverage Orders</span>
             </a>
-            <a class="nav-item" href="">
+            <a class="nav-item" href="/owner_manager/structure/menu_items.html">
               <i class="fa-solid fa-book-open"></i>
               <span>Menu Items</span>
             </a>
@@ -116,68 +116,160 @@
           </div>
         </div>
         <div class="table-card">
-          <h3><strong>Recent Activity</strong></h3>
+          <div class="top-table">
+            <h3>
+              Today's Booking Transactions
+            </h3>
+            <a href="/owner_manager/structure/booking_management.html">
+              <strong>View All</strong>
+            </a>
+          </div>
           <div class="table-container">
             <table>
               <thead>
                 <tr>
-                  <th>Payment ID</th>
                   <th>Booking ID</th>
                   <th>Guest ID</th>
-                  <th>Amount</th>
-                  <th>Payment Type</th>
-                  <th>Method</th>
-                  <th>Date</th>
+                  <th>User ID</th>
+                  <th>Check-in Date</th>
+                  <th>Check-out Date</th>
+                  <th>Total Amount</th>
+                  <th>Downpayment</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>PAY-005</td>
-                  <td>BK-1025</td>
-                  <td>G-005</td>
+                  <td>BK-1030</td>
+                  <td>G-010</td>
+                  <td>U-01</td>
+                  <td>10/16/2026</td>
+                  <td>10/17/2026</td>
                   <td>₱ 1,500.00</td>
-                  <td>Full Payment</td>
-                  <td>Cash</td>
-                  <td>08/13/2026</td>
+                  <td>₱ 1,500.00</td>
+                  <td>Fully Paid</td>
                 </tr>
                 <tr>
-                  <td>PAY-004</td>
-                  <td>BK-1024</td>
-                  <td>G-004</td>
+                  <td>BK-1029</td>
+                  <td>G-009</td>
+                  <td>U-02</td>
+                  <td>10/15/2026</td>
+                  <td>10/16/2026</td>
+                  <td>₱ 1,500.00</td>
                   <td>₱ 750.00</td>
-                  <td>Downpayment</td>
-                  <td>GCash</td>
-                  <td>08/13/2026</td>
+                  <td>Partially Paid</td>
                 </tr>
                 <tr>
-                  <td>PAY-003</td>
-                  <td>BK-1023</td>
-                  <td>G-003</td>
+                  <td>BK-1028</td>
+                  <td>G-008</td>
+                  <td>U-02</td>
+                  <td>10/15/2026</td>
+                  <td>10/16/2026</td>
                   <td>₱ 2,000.00</td>
-                  <td>Full Payment</td>
-                  <td>Cash</td>
-                  <td>08/12/2026</td>
+                  <td>₱ 2,000.00</td>
+                  <td>Fully Paid</td>
                 </tr>
                 <tr>
-                  <td>PAY-002</td>
-                  <td>BK-1022</td>
-                  <td>G-002</td>
+                  <td>BK-1027</td>
+                  <td>G-007</td>
+                  <td>U-01</td>
+                  <td>10/14/2026</td>
+                  <td>10/15/2026</td>
+                  <td>₱ 2,000.00</td>
                   <td>₱ 1,000.00</td>
-                  <td>Downpayment</td>
-                  <td>PayMaya</td>
-                  <td>08/11/2016</td>
+                  <td>Partially Paid</td>
                 </tr>
                 <tr>
-                  <td>PAY-001</td>
-                  <td>BK-1021</td>
-                  <td>G-001</td>
+                  <td>BK-1026</td>
+                  <td>G-006</td>
+                  <td>U-06</td>
+                  <td>10/12/2026</td>
+                  <td>10/13/2026</td>
                   <td>₱ 1,500.00</td>
-                  <td>Full Payment</td>
-                  <td>Bank Transfer</td>
-                  <td>08/10/2026</td>
+                  <td>₱ 750.00</td>
+                  <td>Partially Paid</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <!--Second Table-->
+          <div class="second-table">
+            <div class="top-table">
+              <h3>
+                Recent Payments
+              </h3>
+              <a href="/owner_manager/structure/payment_records.html">
+                <strong>View All</strong>
+              </a>
+            </div>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Payment ID</th>
+                    <th>Booking ID</th>
+                    <th>User ID</th>
+                    <th>Amount Paid</th>
+                    <th>Payment Type</th>
+                    <th>Payment Method</th>
+                    <th>Payment Date</th>
+                    <th>Receipt Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                  <tr>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                  <tr>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                  <tr>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                  <tr>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </main>
