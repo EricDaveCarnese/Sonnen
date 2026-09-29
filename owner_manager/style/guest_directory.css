@@ -178,10 +178,11 @@ aside{
 }
 .top-table{
     text-align: end;
-    padding: 10px 20px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
 }
 .top-table button{
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 5px;
     border: none;
     text-decoration: none;
@@ -192,40 +193,48 @@ aside{
 }
 .top-table button:hover{
     transform: scale(1.03);
+    cursor: pointer;
 }
-.top-table button:hover{
+.top-table button:active{
     transform: scale(0.90);
 }
 .table-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    overflow-y: auto;
+    max-height: 550px;
+    margin: 0 auto;
+    display: block;
 }
 table{
-  border: 1px solid gray;
-  width: 97.5%;
-  border-collapse: collapse;
-  font-size: 18px;
+    width: 97.5%;
+    border-collapse: collapse;
+    font-size: 18px;
+    margin: 0 auto;
+}
+thead{
+    background: linear-gradient(135deg, rgb(255, 184, 0), rgb(217, 119, 6));
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 th{
-  border-bottom: 1px solid gray;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.466);
-  color: rgba(3, 3, 3, 0.884);
-  font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    color: rgba(3, 3, 3, 0.884);
+    font-weight: 500;
+    font-size: 15px;
 }
-tr, td{
-  border-bottom: 1px solid rgb(190, 183, 183);
-  padding: 20px;
-  background: rgba(96, 94, 94, 0.427);
-  text-align: right;
-  color: rgba(255, 255, 255, 0.76);
-  font-size: 15px;
+td{
+    border-bottom: 1px solid rgb(190, 183, 183);
+    padding: 15px;
+    background: rgba(96, 94, 94, 0.427);
+    text-align: right;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 15px;
 }
 td:nth-child(6){
-  color:rgba(255, 183, 0, 0.914);
+    color:rgba(255, 183, 0, 0.914);
 }
 tbody tr:hover{
-  background: rgba(149, 123, 57, 0.459);
-  cursor: pointer;
+    background: rgba(149, 123, 57, 0.459);
 }
