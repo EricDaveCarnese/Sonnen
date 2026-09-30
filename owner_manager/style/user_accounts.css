@@ -127,7 +127,6 @@ aside{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 .main{
     margin-left: 270px;
     min-height: 100vh;
