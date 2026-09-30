@@ -92,7 +92,7 @@ aside{
     align-items: center;
     border-top: 2px solid rgba(255, 184, 0, 0.15);
     padding: 18px 20px;
-    margin-top: 170px;
+    margin-top: 25px;
     background: rgba(31, 22, 16, 0.5);
 }
 .user-logo{
@@ -171,7 +171,7 @@ aside{
     
 }
 .table-card {
-    height: 370px;
+    height: auto;
     background: rgba(255, 253, 253, 0.692);
     margin: 18px;
     margin-right: 28px;
@@ -179,9 +179,22 @@ aside{
     padding-top: 5px;
 }
 .top-table{
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 15px;
     margin-bottom: 5px;
+}
+.search-bar input{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+.search-bar i{
+    position: absolute;
+    top: 5.5%;
+    left: 3%;
+    color: rgba(111, 109, 109, 0.8);
 }
 .top-table button{
     padding: 10px 30px;
@@ -200,7 +213,7 @@ aside{
 }
 .table-container{
     overflow-y: auto;
-    max-height: 550px;
+    max-height: 560px;
     margin: 0 auto;
     display: block;
 }
@@ -209,6 +222,7 @@ table{
     border-collapse: collapse;
     font-size: 18px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 thead{
     background: linear-gradient(135deg, rgb(255, 184, 0), rgb(217, 119, 6));

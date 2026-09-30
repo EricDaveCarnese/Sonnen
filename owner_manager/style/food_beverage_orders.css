@@ -174,9 +174,21 @@ aside{
     padding-bottom: 10px;
 }
 .top-table{
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5px 15px;
     margin-bottom: 5px;
+}.search-bar input{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+}
+.search-bar i{
+    position: absolute;
+    top: 5.5%;
+    left: 3%;
+    color: rgba(111, 109, 109, 0.8);
 }
 .top-table button{
     padding: 10px 30px;
